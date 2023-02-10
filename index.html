@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+</head>
+
+<body>
+    <label class="switch">
+        <input type="checkbox">
+        <span  onclick="handleBtnClick(this)" class="slider" id="slider"></span>
+    </label>
+    <div class="container">
+        <div class="dis">
+            <h3 class="history" id="history"></h3>
+            <h1 class = "display" id="display">0</h1>
+        </div>
+        <div class="tes">
+            <div class="container-row">
+                <div onclick="handleBtnClick(this)" class="button shadow">CE</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">DEL</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op">(</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op">)</div>
+            </div>
+            <div class="container-row">
+                <div onclick="handleBtnClick(this)" class="button shadow ">7</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">8</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">9</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op" id="operator">/</div>
+            </div>
+            <div class="container-row">
+                <div onclick="handleBtnClick(this)" class="button shadow">4</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">5</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">6</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op" id="operator">x</div>
+            </div>
+            <div class="container-row">
+                <div onclick="handleBtnClick(this)" class="button shadow ">1</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">2</div>
+                <div onclick="handleBtnClick(this)" class="button shadow">3</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op" id="operator">-</div>
+            </div>
+            <div class="container-row">
+                <div onclick="handleBtnClick(this)" class="button shadow">0</div>
+                <div onclick="handleBtnClick(this)" class="button shadow koma">.</div>
+                <div onclick="handleBtnClick(this)" class="button result" id="result">=</div>
+                <div onclick="handleBtnClick(this)" class="button sha-op" id="operator">+</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
